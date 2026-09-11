@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import type { Product } from "@/lib/products";
+import Link from "next/link";
 
 type ProductCardProps = {
   product: Product;
@@ -16,7 +17,9 @@ type ProductCardProps = {
 };
 
 function formatPrice(product: Product) {
-  return `${product.currency} ${product.price.toFixed(2)}`;
+  return product.price > 0
+    ? `${product.currency} ${product.price.toFixed(2)}`
+    : "";
 }
 
 export function ProductCard({ product, inCart, onAdd }: ProductCardProps) {
@@ -78,6 +81,17 @@ export function ProductCard({ product, inCart, onAdd }: ProductCardProps) {
             <Check className="size-4" />
             Added ✓
           </Button>
+        ) : product.link ? (
+          <Link href={product.link} target="_blank">
+            <Button
+              type="button"
+              variant="outline"
+              disabled={!product.inStock}
+              className="h-10 w-full rounded-md hover:border-[hsl(var(--fintech))]/30 hover:text-[hsl(var(--fintech))]"
+            >
+              Donate now
+            </Button>
+          </Link>
         ) : (
           <Button
             type="button"

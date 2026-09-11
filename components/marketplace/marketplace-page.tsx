@@ -25,6 +25,7 @@ import {
   getCategories,
   getPriceBounds,
   PRODUCTS,
+  type Product,
 } from "@/lib/products";
 import { cn } from "@/lib/utils";
 
@@ -99,8 +100,8 @@ export function MarketplacePage() {
             WAKAPAY marketplace
           </p>
           <h1 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight md:text-4xl">
-            Shop with{" "}
-            <span className="gradient-text">crypto-native</span> checkout
+            Shop with <span className="gradient-text">crypto-native</span>{" "}
+            checkout
           </h1>
           <p className="mt-3 max-w-xl text-muted-foreground">
             One catalog, many checkout patterns — donations, tips, digital
@@ -261,9 +262,9 @@ export function MarketplacePage() {
           ) : (
             <div
               className="mx-auto grid max-w-7xl grid-cols-1 gap-5 transition-opacity sm:grid-cols-2 sm:gap-6 lg:grid-cols-3 xl:grid-cols-4"
-              key={`grid-${filtered.map((p) => p.id).join(",")}`}
+              key={`grid-${filtered.map((p: Product) => p.id).join(",")}`}
             >
-              {filtered.map((product) => (
+              {filtered.map((product: Product) => (
                 <ProductCard
                   key={product.id}
                   product={product}
@@ -279,10 +280,7 @@ export function MarketplacePage() {
         </div>
       </section>
 
-      <FloatingCartButton
-        count={cartCount}
-        onClick={() => setCartOpen(true)}
-      />
+      <FloatingCartButton count={cartCount} onClick={() => setCartOpen(true)} />
       <CartDrawer open={cartOpen} onOpenChange={setCartOpen} />
     </div>
   );

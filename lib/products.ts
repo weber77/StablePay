@@ -76,9 +76,10 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     name: "Buy me a coffee",
     description:
       "Quick thank-you tip after a helpful stream, post, or office hours session.",
-    price: 5,
+    price: 0,
     currency: "USD",
     category: "Tips",
+    link: "http://localhost:3002/link/syqyjdh4",
     inStock: true,
   },
   {
@@ -86,9 +87,10 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     name: "Live stream shoutout",
     description:
       "Your name read on stream plus a pinned thank-you in chat (demo perk).",
-    price: 25,
+    price: 5,
     currency: "USD",
     category: "Tips",
+    link: "http://localhost:3002/link/ihseufe4",
     inStock: true,
   },
 
