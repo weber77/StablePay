@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WAKAPAY — Demo marketplace",
-  description: "WAKAPAY demo marketplace with Wakari checkout",
+  title: "STABLE-PAY — Demo marketplace",
+  description: "STABLE-PAY demo marketplace with Wakari checkout",
 };
 
 export default function RootLayout({

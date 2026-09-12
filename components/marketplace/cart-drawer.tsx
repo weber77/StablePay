@@ -79,7 +79,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
           </SheetTitle>
           <SheetDescription>
             {lines.length === 0
-              ? "Add items from the marketplace to checkout with WAKAPAY."
+              ? "Add items from the marketplace to checkout with STABLE-PAY."
               : `${lines.length} product${lines.length === 1 ? "" : "s"} in cart`}
           </SheetDescription>
         </SheetHeader>
@@ -105,8 +105,8 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                       {line.product.name}
                     </p>
                     <p className="text-xs text-muted-foreground">
-                      {line.product.currency}{" "}
-                      {line.product.price.toFixed(2)} each
+                      {line.product.currency} {line.product.price.toFixed(2)}{" "}
+                      each
                     </p>
                     <div className="mt-2 flex items-center justify-between gap-2">
                       <div className="flex items-center rounded-md border border-border">
@@ -142,8 +142,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
                         </Button>
                       </div>
                       <p className="text-sm font-semibold tabular-nums">
-                        {line.product.currency}{" "}
-                        {lineTotal(line).toFixed(2)}
+                        {line.product.currency} {lineTotal(line).toFixed(2)}
                       </p>
                     </div>
                   </div>
@@ -193,7 +192,7 @@ export function CartDrawer({ open, onOpenChange }: CartDrawerProps) {
             >
               {checkoutMutation.isPending
                 ? "Starting checkout…"
-                : "Pay with WAKAPAY"}
+                : "Pay with STABLE-PAY"}
             </Button>
 
             <button

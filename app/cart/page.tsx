@@ -6,8 +6,9 @@ import { toast } from "sonner";
 
 import { ProductThumbnail } from "@/components/marketplace/product-thumbnail";
 import { Button } from "@/components/ui/button";
-import { postCheckout } from "@/lib/checkout-client";
+
 import { useCart } from "@/lib/cart-context";
+import { postCheckout } from "@/lib/checkout-client";
 
 function buildItems(lines: ReturnType<typeof useCart>["lines"]) {
   return lines.map((l) => ({
@@ -68,13 +69,13 @@ export default function CartPage() {
                     fallbackEmojiClassName="text-xl"
                   />
                   <div className="min-w-0">
-                  <p className="font-medium text-foreground">
-                    {line.product.name}
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    {line.product.currency} {line.product.price.toFixed(2)}{" "}
-                    each
-                  </p>
+                    <p className="font-medium text-foreground">
+                      {line.product.name}
+                    </p>
+                    <p className="text-sm text-muted-foreground">
+                      {line.product.currency} {line.product.price.toFixed(2)}{" "}
+                      each
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -110,7 +111,7 @@ export default function CartPage() {
             >
               {checkoutMutation.isPending
                 ? "Starting checkout…"
-                : "Pay with WAKAPAY"}
+                : "Pay with STABLE-PAY"}
             </Button>
             <button
               type="button"

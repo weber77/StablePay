@@ -43,9 +43,10 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     name: "Support the developer",
     description:
       "One-time contribution to fund docs, fixes, and weekend OSS releases. Tax receipt not included (demo).",
-    price: 0.15,
+    price: 0,
     currency: "USD",
     category: "Donation",
+    link: "http://localhost:3002/link/g5ea5292",
     inStock: true,
   },
   {
@@ -53,20 +54,21 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     name: "Sponsor our open-source SDK",
     description:
       "Help keep the Wakari client libraries free and maintained for the community.",
-    price: 50,
+    price: 0,
     currency: "USD",
     category: "Donation",
+    link: "http://localhost:3002/link/jq82tptb",
     inStock: true,
-    priceFrom: true,
   },
   {
     id: "donate-cause",
     name: "Climate tech grant pool",
     description:
       "Pooled donations routed to vetted carbon-removal pilots (demo allocation).",
-    price: 100,
+    price: 0,
     currency: "USD",
     category: "Donation",
+    link: "http://localhost:3002/link/x9js1n6b",
     inStock: true,
   },
 
@@ -122,7 +124,7 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     id: "physical-tote",
     name: "Canvas tote",
     description:
-      "Reinforced straps with embroidered WAKAPAY mark. Natural color.",
+      "Reinforced straps with embroidered STABLE-PAY mark. Natural color.",
     price: 28,
     currency: "USD",
     category: "Physical goods",
@@ -164,7 +166,7 @@ const PRODUCT_SEEDS: ProductSeed[] = [
   // Tickets — events & access
   {
     id: "ticket-webinar",
-    name: "WAKAPAY builder webinar — seat",
+    name: "STABLE-PAY builder webinar — seat",
     description:
       "Live walkthrough of hosted checkout and settlement. Recording included for 30 days.",
     price: 35,

@@ -10,7 +10,7 @@ export function StoreHeader() {
           href="/"
           className="text-sm font-semibold tracking-tight transition-colors hover:text-[hsl(var(--fintech))]"
         >
-          <span className="gradient-text">WAKAPAY</span>
+          <span className="gradient-text">STABLE-PAY</span>
           <span className="text-muted-foreground"> · Demo store</span>
         </Link>
         <Link

@@ -97,7 +97,7 @@ export function MarketplacePage() {
       <section className="relative py-12 md:py-16">
         <div className="container mx-auto px-4">
           <p className="text-sm font-medium uppercase tracking-[0.2em] text-[hsl(var(--fintech))]/80">
-            WAKAPAY marketplace
+            STABLE-PAY marketplace
           </p>
           <h1 className="mt-3 max-w-2xl text-3xl font-bold tracking-tight md:text-4xl">
             Shop with <span className="gradient-text">crypto-native</span>{" "}
@@ -106,7 +106,7 @@ export function MarketplacePage() {
           <p className="mt-3 max-w-xl text-muted-foreground">
             One catalog, many checkout patterns — donations, tips, digital
             goods, subscriptions, physical retail, services, tickets, and
-            memberships. Filter by use case, then pay with WAKAPAY.
+            memberships. Filter by use case, then pay with STABLE-PAY.
           </p>
         </div>
       </section>
