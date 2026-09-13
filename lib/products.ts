@@ -46,7 +46,7 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     price: 0,
     currency: "USD",
     category: "Donation",
-    link: "http://localhost:3002/link/g5ea5292",
+    link: "http:https://checkout.wakapay.cash/link/0qz0a2uy",
     inStock: true,
   },
   {
@@ -57,7 +57,7 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     price: 0,
     currency: "USD",
     category: "Donation",
-    link: "http://localhost:3002/link/jq82tptb",
+    link: "https://checkout.wakapay.cash/link/auivbabm",
     inStock: true,
   },
   {
@@ -68,7 +68,7 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     price: 0,
     currency: "USD",
     category: "Donation",
-    link: "http://localhost:3002/link/x9js1n6b",
+    link: "https://checkout.wakapay.cash/link/k662utvf",
     inStock: true,
   },
 
@@ -81,7 +81,7 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     price: 0,
     currency: "USD",
     category: "Tips",
-    link: "http://localhost:3002/link/syqyjdh4",
+    link: "https://checkout.wakapay.cash/link/rnu0pp0c",
     inStock: true,
   },
   {
@@ -92,7 +92,7 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     price: 5,
     currency: "USD",
     category: "Tips",
-    link: "http://localhost:3002/link/ihseufe4",
+    link: "https://checkout.wakapay.cash/link/hu4s1ldv",
     inStock: true,
   },
 
@@ -102,9 +102,9 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     name: "Merchant Starter — monthly",
     description:
       "Up to 500 checkout sessions / month, email receipts, and sandbox + production keys.",
-    price: 29,
+    price: 2,
     currency: "USD",
-    link: "http://localhost:3002/link/axmrxncw",
+    link: "https://checkout.wakapay.cash/link/p3e6o47k",
     category: "Subscription",
     inStock: true,
   },
