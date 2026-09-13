@@ -89,7 +89,9 @@ export function ProductCard({ product, inCart, onAdd }: ProductCardProps) {
               disabled={!product.inStock}
               className="h-10 w-full rounded-md hover:border-[hsl(var(--fintech))]/30 hover:text-[hsl(var(--fintech))]"
             >
-              Donate now
+              {product.category === "Subscription"
+                ? "Subscribe now"
+                : "Donate now"}
             </Button>
           </Link>
         ) : (
