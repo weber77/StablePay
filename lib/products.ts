@@ -46,7 +46,7 @@ const PRODUCT_SEEDS: ProductSeed[] = [
     price: 0,
     currency: "USD",
     category: "Donation",
-    link: "http:https://checkout.wakapay.cash/link/0qz0a2uy",
+    link: "https://checkout.wakapay.cash/link/0qz0a2uy",
     inStock: true,
   },
   {
